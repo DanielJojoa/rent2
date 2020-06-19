@@ -1,6 +1,6 @@
 <?php
 
-    include 'encabezado.php';
+    include 'conexion.php';
     $placa = $_POST["placa"]; 
 
     $sql = "DELETE FROM autos WHERE placa ='$placa'";
@@ -10,8 +10,4 @@
     else{
         echo 0; 
     }
-
-    
-    include 'pie.php'
-
 ?>

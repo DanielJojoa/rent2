@@ -30,7 +30,7 @@
             <label for="modelo">Modelo</label>
         </div>
 
-        <button type ="submit" class="btn btn-primary" onclick="registrarAuto()" >Registrar </button>
+        <button type ="submit" class="btn btn-primary">Registrar </button>
         <a href="index.php" class="btn btn-danger">Cancelar </a>
     </form>
 </div>
@@ -40,3 +40,10 @@
     include 'pie.php';
 ?>
 
+<script>
+    document.getElementById('formRegistroAutos').addEventListener('submit',event=>{
+    event.preventDefault();
+    registrarAuto();
+
+});
+</script>

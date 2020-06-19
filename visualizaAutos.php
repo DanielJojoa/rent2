@@ -48,7 +48,7 @@
                         <td>'.$modelo.'</td>
                         <td>'.$estado.'</td>
                         <td> <a href= "formActualizaAutos.php?placa='. $placa.' "class="btn btn btn-secondary"> Editar </a> </td>
-                        <td> <a onclick= "eliminar('.$placa.')" class="btn btn btn-danger"> Eliminar </a>  </td> 
+                        <td> <a onclick= "eliminar(\''.$placa.'\')" class="btn btn btn-danger"> Eliminar </a>  </td> 
                     </tr>
             ');                        
         }

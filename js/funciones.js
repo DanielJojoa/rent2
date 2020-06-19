@@ -6,8 +6,7 @@ $(document).ready(function() {
 function registrarAuto() {
     // Función que Registra  un auto empleando ajax
     const data = $("#formRegistroAutos").serialize();
-    console.log('esta es data',data);
-    
+ 
     $.ajax({
         type: "POST", // metodo por el cual se envian los datos
         data: $("#formRegistroAutos").serialize(), // Se toman todos los datos del formulario
